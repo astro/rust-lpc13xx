@@ -1,0 +1,23 @@
+[package]
+name = "lpc13xx"
+version = "0.0.0"
+authors = ["Astro <astro@spaceboyz.net>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Peripheral access API for NXP LPC13xx microcontrollers generated through svd2rust"
+documentation = "https://docs.rs/lpc13xx"
+keywords = ["arm", "cortex-m", "nxp", "lpc", "svd2rust"]
+license = "Apache-2.0"
+repository = "https://github.com/astro/rust-lpc13xx"
+
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.2"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.1"
+
+[features]
+rt = ["cortex-m-rt"]
